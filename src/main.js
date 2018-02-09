@@ -3,6 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import FastClick from 'fastclick'
+
+import './common/styles/lib/animate.css'
+import './common/styles/lib/weui.min.css'
+import './common/styles/lib/iconfont.css'
+
+FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 

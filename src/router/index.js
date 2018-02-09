@@ -4,16 +4,63 @@ import Config from './config'
 
 Vue.use(Router)
 
-const Car = () => import('@/components/Car')
+const WeChat = () => import('@/components/WeChat')
+const Contact = () => import('@/components/Contact')
+const Find = () => import('@/components/Find')
+const Me = () => import('@/components/Me')
+
+const Welcome = () => import('@/components/Welcome')
+
+const Search = () => import('@/components/Search')
 
 let router = new Router({
   routes: [
     {
       path: '/',
-      name: 'car',
-      component: Car,
+      name: 'welcome',
+      component: Welcome,
       meta: {
-        title: 'h5'
+        title: '微信'
+      }
+    },
+    {
+      path: '/wechat',
+      name: 'wechat',
+      component: WeChat,
+      meta: {
+        title: '微信'
+      }
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact,
+      meta: {
+        title: '通讯录'
+      }
+    },
+    {
+      path: '/find',
+      name: 'find',
+      component: Find,
+      meta: {
+        title: '发现'
+      }
+    },
+    {
+      path: '/me',
+      name: 'me',
+      component: Me,
+      meta: {
+        title: '我'
+      }
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: Search,
+      meta: {
+        title: '搜索'
       }
     }
   ]

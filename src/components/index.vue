@@ -1,25 +1,23 @@
 <template>
-  <div class="demo">
+  <div class="">
 
   </div>
 </template>
 
 <script>
+
 export default {
+  name: '',
   components: {
   },
   data () {
     return {
     }
-  },
-  methods: {
   }
 }
 </script>
 
 <style lang="less" scoped>
-  p{
-    width: 200px;
-    height: 10px;
-  }
+    @import "./../../common/styles/index.less";
+
 </style>
