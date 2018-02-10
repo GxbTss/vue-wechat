@@ -12,6 +12,7 @@ const Me = () => import('@/components/Me')
 const Welcome = () => import('@/components/Welcome')
 
 const Search = () => import('@/components/Search')
+const Info = () => import('@/components/Info')
 
 let router = new Router({
   routes: [
@@ -53,6 +54,15 @@ let router = new Router({
       component: Me,
       meta: {
         title: '我'
+      },
+      children: []
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: Info,
+      meta: {
+        title: '个人信息'
       }
     },
     {

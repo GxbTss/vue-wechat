@@ -53,11 +53,14 @@ export default {
 <style lang="less">
     @import "./common/styles/index.less";
     #app{
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100vh;
         overflow: hidden;
         .fade-in-enter-active, .fade-in-leave-active {
-            transition: opacity .5s
+            transition: opacity .3s ease-in;
         }
         .fade-in-enter, .fade-in-leave-to {
             opacity: 0

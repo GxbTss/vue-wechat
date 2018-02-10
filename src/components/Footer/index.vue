@@ -64,6 +64,7 @@ export default {
           justify-content: center;
           color: #929292;
           flex: 1;
+          cursor: pointer;
           span{
             &:first-child{
               margin-bottom: 5px;

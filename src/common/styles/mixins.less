@@ -22,3 +22,24 @@
   -webkit-line-clamp: @n;
   -webkit-box-orient: vertical;
 }
+// 1px
+.before-solid::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: scaleY(.5);
+  border-bottom: 1px solid #d7d6dc;
+  color: #d7d6dc;
+}
+.after-solid::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: scaleY(.5);
+  border-bottom: 1px solid #d7d6dc;
+  color: #d7d6dc;
+}
